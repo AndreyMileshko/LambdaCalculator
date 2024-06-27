@@ -4,12 +4,7 @@ public class Main {
 
         int a = calc.plus.apply(1, 2);
         int b = calc.minus.apply(1, 1);
-        int c = 0;
-        try {
-            c = calc.divide.apply(a, b);
-        } catch (ArithmeticException e) {
-            System.out.println("Нельзя делить на ноль! Переменная \"c\" не изменилась.");
-        }
+        int c = calc.divide.apply(a, b);
         int d = calc.multiply.apply(3, -4);
         int f = calc.ads.apply(d);
         int g = calc.pow.apply(f);
